@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+#hello{
+    background-color: blue;
+text-align: center;
+border: 3px solid white;
+    color: brown;
+}
+.id{
+    text-align:center;
+}

@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+#hellodiv{
+    
+    border:2px solid rgb(53, 49, 95);
+    text-align: center;
+}
+.img{
+  
+   width: 300px;
+    height: 210px;
+}
