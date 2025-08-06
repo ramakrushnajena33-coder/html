@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: rgb(104, 174, 174);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .profile {
+            width: 60px;
+            height: 60px;
+            background-color: #381616;
+            border-radius: 10px;
+        }
+
+        .main-content {
+            flex: 1;
+            background-image: url('https://pin.dekhnews.com/wp-content/uploads/2020/08/adobestock_196973170-5bfc2e7a46e0fb00265c7563-1024x681.jpg');
+            /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: rgb(188, 176, 176);
+            display: flex;
+            justify-content: top;
+            align-items: center;
+            text-align: center;
+            font-size: 24px;
+            flex-direction: column;
+        }
+
+        .nav-links {
+            background-color: rgba(40, 37, 37, 0.5);
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+        .nav-links{
+            text-decoration: none;
+            /* height: 1rem; */
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform:none ;
+            color: #fff;
+        }
+        .nav-links span{
+            padding:1rem ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav class="nav-links">
+                <span><a href="/">Home</a></span>
+                <span><a href="/">About</a></span>
+                <span><a href="/">Contact</a></span>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile"></div>
+            <div class="profile"></div>
+            <div class="profile"></div>
+        </div>
+        <div class="main-content"></div>
+    </div>
+</body>
+
+</html>
