@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            display: flex;
+            margin: 250px;
+            padding: 30px;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        #window {
+            position: absolute;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            width: 250px;
+            flex-wrap: wrap;
+            height: 200px;
+            /* allow content to grow */
+        }
+
+        .w1,
+        .w2,
+        .w3,
+        .w4 {
+            display: flex;
+            width: 80px;
+            height: 85px;
+            border-radius: 35% 40%;
+        }
+
+        .w1 {
+            background-color: red;
+        }
+
+        .w2 {
+            background-color: blue;
+        }
+
+        .w3 {
+            background-color: chartreuse;
+        }
+
+        .w4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="window">
+        <div class="w1"></div>
+        <div class="w2"></div>
+        <div class="w3"></div>
+        <div class="w4"></div>
+    </div>
+</body>
+
+</html>
